@@ -10,7 +10,7 @@ URL = 'https://github.com/tyleracox/fantasy_math'
 
 # Package dependencies
 INSTALL_REQUIRES = [
-    'numpy',
+    'numpy==1.23.5',
     'asyncio',
     'aiohttp',
     'pandas',

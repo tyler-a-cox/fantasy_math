@@ -1,0 +1,4 @@
+# Git ignore for python project
+#
+.DS_Store
+*.ipynb_checkpoints

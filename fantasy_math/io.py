@@ -30,3 +30,20 @@ async def read_html(urls):
                 print("No data found in HTML.")
     
     return tables
+
+def get_fantasy_urls(year_range=[2015, 2023], week_range=[1, 17], players=['qb', 'rb', 'wr', 'te']):
+    """
+    """
+    urls = [] 
+    for yi in range(year_range):
+        for wi in range(week_range):
+            for player_label in range(players):
+                url = f"https://www.footballguys.com/playerhistoricalstats?pos={player_label}&yr={yi}&startwk={wi}&stopwk={wi}&profile=p"
+                urls.append(url)
+
+    return urls
+
+def transform_tables():
+    """
+    """
+    pass
